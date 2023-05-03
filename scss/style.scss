@@ -1,39 +1,8 @@
 @import 'reset';
 @import 'var';
+@import 'header';
+@import 'First';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,600&display=swap');
-
 body{
   font-family: 'Montserrat Alternates', sans-serif;
-
 }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  min-height: 50px;
-  margin: auto;
-  padding: 15px 0;
-  position: fixed;
-  top:0;
-  z-index: 99;
-  background-color: $black;
-
-// img{
-//     margin-left: 100px;
-//   }
-
-// nav{
-//     margin-right: 100px;
-//     display: flex;
-// }
-a{
-  text-decoration: none;
-  color: $white;
-  padding:44px;
-  text-align: right;
-  font-size:14px;
-  opacity:0.69;
-  
-}}
