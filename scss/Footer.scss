@@ -1,0 +1,26 @@
+footer{
+    height: 124px;
+    background: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+.Social2{
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+    img{
+        height:20px;
+        display: inline-block;
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.5s;
+        }
+    }
+}
+p{
+    font-size:18px;
+    color:#FFFFFF;
+    opacity: 0.5;
+}
+}
