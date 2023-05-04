@@ -5,23 +5,17 @@ footer{
     justify-content: space-between;
     align-items: center;
 
-.social2 {
+.icons {
     display:flex;
     justify-content: space-around;
     width: 50%;
-    
-    img{
-        height:20px;
-        display: inline-block;
+    img {
+        height: 20px;
         transition: 0.3s;
-        &:hover{
+        &:hover {
             opacity: 0.5s;
-        }
-    }
-}
-p{
-    font-size:18px;
-    color:$white;
-    opacity: 0.5;
-}
-}
+        }}}
+p {
+    font-size: 18px;
+    color: $white;
+}}
