@@ -1,4 +1,4 @@
-.First{
+.first {
     padding-top: 72px;
     height: 639px;
     background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)),url(../images/img1.png) center/cover;
@@ -6,23 +6,23 @@
     justify-content: space-between;
     align-items: center;
     }
-.About{
+.about {
     display: flex;
     flex-direction: column;
     justify-content: right;
     color:$white;
     text-align: left;
     margin-left: 150px;
-img{
+img {
     width: 247px;
     height: 108px;
     }}
-h2{
+h2 {
     width: 426px;
     height: 87px;
     font-size: 36px;
     }
-p{
+p {
     width: 651px;
     height: 65px;
     opacity: 0.8;
@@ -40,13 +40,13 @@ button {
     border: 2px solid $green;
     }}
 
-.Details{
+.details {
     background: $white;
     width: 360px;
     height: 425px;
     border-radius: 4px;
     margin-right: 190px;
-h2{
+h2 {
     line-height: 57px;
     height:57px;
     width: 360px;
@@ -60,7 +60,7 @@ h2{
         color:$orange;
     }
 }}
-h4{
+h4 {
     margin: 22px 0 10px 50px;
 }
 input {
@@ -74,7 +74,7 @@ input {
         padding: 5px;
     }}
 
-#getstarted{
+#getstarted {
     color:white;
     text-decoration: none;
     width: 360px;

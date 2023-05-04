@@ -5,10 +5,11 @@ footer{
     justify-content: space-between;
     align-items: center;
 
-.Social2{
+.social2 {
     display:flex;
     justify-content: space-around;
     width: 50%;
+    
     img{
         height:20px;
         display: inline-block;
@@ -20,7 +21,7 @@ footer{
 }
 p{
     font-size:18px;
-    color:#FFFFFF;
+    color:$white;
     opacity: 0.5;
 }
 }
