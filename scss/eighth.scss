@@ -1,0 +1,105 @@
+.eighth{
+    height: 573px;
+    background: $orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        font-size: 36px;
+        text-align: center;
+        color: $white;
+        padding: 60px 5px 40px 5px;
+    }
+
+    p {
+        font-size: 14px;
+        color: $white;
+        text-align: center;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto;
+        width: 390px;
+        background: $white;
+        border-radius: 5px;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.277);
+        padding: 20px 0;
+
+        input {
+            font-size: 12px;
+            border: none;
+            border-bottom: 1px solid $black;
+            padding: 10px;
+            width: 65%;
+            margin: 5px auto;
+        }
+        form .inputs {
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
+
+            input{
+                appearance: none;
+                width: 10px;
+                height: 10px;
+                border: 1px solid $green;
+                border-radius: 50%;
+                margin: 10px 5px 10px 15px;
+                position: relative;  
+            &:before {
+                position: absolute;
+                    top: 46%;
+                    left: 46%;
+                    content: "";
+                    width: 0%;
+                    height: 0%;
+                    background: $green;
+                    border-radius: 50%;
+                    transition: 0.3s;
+            }
+
+            &:checked:before {
+                top: 25%;
+                left: 25%;
+                width: 50%;
+                height: 50%;
+            }
+            &:checked+label {
+                font-weight: 600;
+            }
+            }
+            
+            label {
+                font-size: 9px;
+            }
+        }
+
+        button {
+            max-width: 159px;
+            height: 48px;
+            background: $green;
+            border: none;
+            margin: 40px auto;
+            padding: 0 55px;
+            color: white;
+            font-size: 15px;
+            border-radius: 5px;
+
+            &:hover {
+                background: $orange;
+                color: black;
+            }
+            
+        }}}
+        input[type="text"]::placeholder {
+            color: #0000003b;
+            opacity: 1;
+          }
+          input[type="tel"]::placeholder {
+            color: #0000003b;
+            opacity: 1;
+          }
