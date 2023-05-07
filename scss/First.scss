@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+    
 .about {
     display: flex;
     flex-direction: column;
@@ -84,8 +84,7 @@ input {
         color: $grey;
         padding: 5px;
 }}
-
-    form .details {
+form .details {
         display: flex;
         align-items: center;
         margin-left: 35px;
@@ -143,4 +142,5 @@ input {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
+}
 }

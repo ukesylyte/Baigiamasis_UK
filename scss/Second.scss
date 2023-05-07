@@ -5,6 +5,7 @@
     height: 105px;
     background: $white;
     max-width: 1600px;
+}
 
 .text {
     margin-left: 150px;
@@ -25,9 +26,8 @@
     gap:150px;
 
     img {
-    
     opacity: 65%;
     transition: 0.3s;
     &:hover {
     opacity: 1;
-}}}}
+}}}
