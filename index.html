@@ -33,19 +33,21 @@
   <div class="details">
     <h2>Try Your <span>FREE</span> Trial Today</h2>
     <h4>Your details</h4>
-    <input id="inputname" type="text" placeholder="First name">
-    <input id="inputsurname" type="text" placeholder="Last name">
-    <input id="inputphone" type="text" placeholder="Phone number">
+    <input id="input1" type="text" placeholder="First name">
+    <input id="input2" type="text" placeholder="Last name">
+    <input id="input3" type="tel" placeholder="Phone number">
     <h4>Type of subscription</h4>
+    <form action="#">
   <div class="select">
     <input id="monthly" type="radio" name="subscription" value="monthly">
     <label for="monthly">MONTHLY</label>
     <input id="yearly" type="radio" name="subscription" value="yearly">
     <label for="yearly">YEARLY</label>
   </div>
-    <a id="getstarted" href="#">GET STARTED</a>
-</div>
-</div>
+  </form>
+  <button id="getstarted">GET STARTED</button>
+  </div>
+  </div>
 
 <!--ANTRA-->
 <div class="second">
@@ -63,9 +65,77 @@
   </div>
 
   <!--TREČIA-->
-<div class="third">
-</div>
-
+<section class="tabbed" id="features">
+  <div class="section-inner">
+    <div class="buttons">
+      <button class="selected" onclick="showTab(event,'pirmas')"> <span> Register </span></button>
+      <button onclick="showTab(event,'antras')"> <span> Apply </span></button>
+      <button onclick="showTab(event,'trecias')"> <span> Recieve </span></button>
+      </div>
+    <div class="tabs">
+      <div id="pirmas" class="tab selected">
+        <div class="content">
+          <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+          </div>
+          <div class="content-img">
+            <div class="single-img">
+              <img src="app/images/photo-1543364195-bfe6e4932397.png" alt="food">
+              <p>Explore</p>
+            </div>
+            <div class="single-img">
+              <img src="app/images/photo-1493409137604-0901c55e4456.png" alt="leaf">
+              <p>Explore</p>
+            </div>
+            <div class="single-img">
+              <img src="app/images/photo-1448387473223-5c37445527e7.png" alt="car">
+              <p>Explore</p>
+            </div>
+          </div>
+      </div>
+      <div id="antras" class="tab">
+        <div class="content">
+          <h2>Tabs with soft transitioning effect are a great way to organize and present information on a website or web application.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident animi quisquam nesciunt molestias? <br><br>Quis saepe nostrum nulla commodi nesciunt, tempora ipsum deleniti fuga fugit voluptatem atque est explicabo reiciendis magnam?</p>
+        </div>
+        <div class="content-img">
+          <div class="single-img">
+            <img src="app/images/photo-1543364195-bfe6e4932397.png" alt="food">
+            <p>Explore</p>
+            </div>
+            <div class="single-img">
+              <img src="app/images/photo-1493409137604-0901c55e4456.png" alt="leaf">
+              <p>Explore</p>
+            </div>
+            <div class="single-img">
+              <img src="app/images/photo-1448387473223-5c37445527e7.png" alt="car">
+              <p>Explore</p>
+            </div>
+          </div>
+        </div>
+        <div id="trecias" class="tab">
+          <div class="content"> 
+          <h2>With a smooth and subtle transition between tabs, users can easily navigate and find the content they need without feeling overwhelmed or confused.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum quas in ea aperiam voluptate?<br><br> Omnis molestias voluptatem, velit, magni voluptatibus laborum necessitatibus iste natus alias qui officiis, ipsum commodi?</p>
+        </div>
+        <div class="content-img">
+          <div class="single-img">
+            <img src="app/images/photo-1543364195-bfe6e4932397.png" alt="food">
+            <p>Explore</p>
+            </div>
+            <div class="single-img">
+              <img src="app/images/photo-1493409137604-0901c55e4456.png" alt="leaf">
+              <p>Explore</p>
+            </div>
+            <div class="single-img">
+              <img src="app/images/photo-1448387473223-5c37445527e7.png" alt="car">
+              <p>Explore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 <!--KETVIRTA-->
 <div id="info">
 <div class="fourth">
@@ -85,8 +155,10 @@
       <i class="fa-regular fa-comment"></i>
     </div>
     <p><b>Title</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-</div></div>
-</div></div>
+</div>
+</div>
+</div>
+</div>
 
 <!--PENKTA-->
 <div class="fifth">

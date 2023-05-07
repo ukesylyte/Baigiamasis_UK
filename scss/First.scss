@@ -18,7 +18,7 @@
 img {
     width: 247px;
     height: 108px;
-    }}
+    }
 h2 {
     width: 426px;
     height: 87px;
@@ -45,15 +45,18 @@ button {
 &:hover {
     color: $green;
     border: 2px solid $green;
-    }}
+    }}}
 
 .details {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
     background: $white;
-    height: 430px;
-    width: 375px;
-    border-radius: 4px;
-    margin: 75px 150px 0 10px;
-    position: relative;
+    margin-right: 180px;
+    border-radius: 5px;
+
 h2 {
     font-weight: 600;
     font-size: 20px;
@@ -71,35 +74,33 @@ h2 {
 }
 
 h4 {
-    margin: 22px 0 10px 50px;
+    margin: 20px 0 0px 45px;
+    font-weight: 600;
 }
-
-input {
-    border: none;
-    border-bottom: 1px solid $grey;
-    margin: 15px 45px;
-    width: 75%;
-
-&::placeholder {
-        color: $grey;
-        padding: 5px;
-}}
-form .details {
+    input {
+        font-size: 12px;
+        border: none;
+        border-bottom: 1px solid $border;
+        opacity: 0.4;
+        padding: 10px;
+        width: 65%;
+        margin: 5px auto;
+    }
+    form .select {
         display: flex;
         align-items: center;
-        margin-left: 35px;
+        margin-left: 50px;
 
-        input {
+        input{
             appearance: none;
-            width: 13px;
-            height: 13px;
+            width: 10px;
+            height: 10px;
             border: 1px solid $green;
             border-radius: 50%;
             margin: 10px 5px 10px 15px;
-            position: relative;
-
-            &:before {
-                position: absolute;
+            position: relative;  
+        &:before {
+            position: absolute;
                 top: 46%;
                 left: 46%;
                 content: "";
@@ -108,39 +109,44 @@ form .details {
                 background: $green;
                 border-radius: 50%;
                 transition: 0.3s;
-            }
-
-            &:checked:before {
-                top: 24%;
-                left: 24%;
-                width: 50%;
-                height: 50%;
-            }
-
-            &:checked+label {
-                font-weight: 600;
-            }
         }
 
+        &:checked:before {
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+        }
+        &:checked+label {
+            font-weight: 600;
+        }
+        }
+        
         label {
             font-size: 9px;
         }
     }
 
-    a {
+    }
+    button {
         background: $green;
         text-align: center;
-        position: absolute;
         bottom: 0;
         height: 57px;
         width: 100%;
         color: white;
-        line-height: 57px;
-        text-decoration: none;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+
+    
+        &:hover {
+            background: $white;
+            color: $orange;
+
+        }
     }
 }
-}
+
+

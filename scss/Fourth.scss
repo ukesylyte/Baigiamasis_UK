@@ -5,13 +5,13 @@
     justify-content: center;
     align-items: center;
     height: 596px;
-}
-.fourth {
+    .fourth {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap:180px;
     margin: 0px 170px;
+    }
 
     img {
         width: 470px;
@@ -50,4 +50,7 @@
 
       p{
         width: 60%;
-      }}}}
+      }
+    }
+}
+}

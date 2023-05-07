@@ -1,32 +1,5 @@
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween: 50,
-    speed: 1000,
-  
-    breakpoints: {
-      890: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-      },
-      650: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 10,
-      },
-      0: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-      },
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-//eighth section - contacts 
+
+//first section - contacts 
 
 var inputName = document.getElementById("input1")
 var inputSurname = document.getElementById("input2")
@@ -44,6 +17,8 @@ getStarted.addEventListener("click", function () {
     inputNumber.value = ""
 })
 
+//eighth section - contacts 
+
 var contactName = document.getElementById("contact1")
 var contactSurname = document.getElementById("contact2")
 var contactNumber = document.getElementById("contact3")
@@ -59,4 +34,34 @@ sendIt.addEventListener("click", function () {
     contactSurname.value = ""
     contactNumber.value = ""
 })
+
+//SWIPER
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  speed: 1000,
+
+  breakpoints: {
+    890: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    650: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 10,
+    },
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 
