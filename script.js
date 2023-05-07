@@ -1,36 +1,31 @@
-"use strict"
-
-const swiper = new Swiper('.swiper',{
+const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
     slidesPerGroup: 3,
     spaceBetween: 50,
     speed: 1000,
-    
+  
     breakpoints: {
-        890: {
+      890: {
         slidesPerView: 3,
         slidesPerGroup: 3,
-        },
-        650: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 10,
-        },
-        0: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-        },
+      },
+      650: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 10,
+      },
+      0: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
     },
     pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      el: '.swiper-pagination',
+      clickable: true,
     },
-});
-
-
-
+  });
 //eighth section - contacts 
 
 var inputName = document.getElementById("input1")
