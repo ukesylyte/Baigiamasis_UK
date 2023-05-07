@@ -1,25 +1,29 @@
-.fourth {
-    height: 596px;
+#info{
     background: $black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 560px;
+}
+.fourth {
+    // max-width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:180px;
+    margin: 0px 170px;
+    max-width: 1600px;
 
-    .left {
-        display: flex;
-        margin-left: 150px;
-    
     img {
-        width: 100%;
-    }}
+        width: 470px;
+    }
 
     .right {
         display: flex;
         flex-direction: column;
-        margin-right: 150px;
-        // max-width: 460px;
-        color: $white;
-    h3 {
+        gap: 25px;
+    h2 {
         font-size:30px;
     }
     hr {
@@ -29,22 +33,23 @@
     }
     p {
         font-size: 14px;
-        margin-bottom: 25px;
+        width: 55%;
+
     }
-    .last .title {
+    .title {
         display: flex;
-        flex-wrap: nowrap;
         
         .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $orange;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        font-size: 20px;
-      }      
-    .text {
-        font-size: 14px;
-    }}}}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $orange;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            margin-right: 15px;
+      }
+
+      p{
+        width: 50%;
+      }}}}

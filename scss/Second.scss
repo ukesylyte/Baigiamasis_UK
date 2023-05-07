@@ -4,11 +4,11 @@
     align-items: center;
     height: 105px;
     background: $white;
-    box-shadow: 0px 1px 3px #00000061;
+    max-width: 1600px;
 
 .text {
     margin-left: 150px;
-    // margin-right: 100px;
+   
     h3{
     margin-top:20px;
     margin-bottom: 5px;
@@ -18,13 +18,11 @@
     width: 394px;
     font-size:14px;
     text-align: left;
-    color:#86878B;
+    color:$grey;
 }}
 .social {
     display: flex;
     gap:150px;
-    // width: 50%;
-    margin-right: 150px;
 
     img {
     

@@ -1,12 +1,12 @@
 .fifth {
-    height:592px;
+    // height:592px;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
-    padding: 122px 0;
-    gap: 80px;
+    margin: 70px 150px;
+    gap: 15px;
 h2 {
     font-size:36px;
     color:$black;
@@ -18,43 +18,54 @@ hr {
     height: 2px;
 }
 p {
-    color: #86878B;
+    color: $grey;
     font-size: 14px;
     text-align: center;
 }
 .main {
-    height: 380px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-.column {
-    max-height: 200px;
-    width: 285px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-
-.icons {
-    width: 50px;
-    height: 50px;
-    border: 1px solid $orange;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+
+.column {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+        color: $grey;
+    }
+
+.icons {
+
+    display: flex;
+    justify-content: center;
 
     i {
-        color: $orange;
         font-size: 18px;
-    }}
-    h4 {
-        font-size: 20px;
-        font-weight: 400;
-        color:$black;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 1px solid $orange;
+        color: $orange;
     }
-    p{
-        color:  #86878B;
+}
+
+    h4{
+        font-size: 20px;
+        font-weight: 400px;
+        color: $black;
     }}}}
+    // h4 {
+    //     font-size: 20px;
+    //     font-weight: 400;
+    //     color:$black;
+    // }
+    // p{
+    //     color:  #86878B;
+    // }}}}
