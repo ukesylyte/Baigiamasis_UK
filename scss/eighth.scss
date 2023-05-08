@@ -1,10 +1,7 @@
 .eighth{
+    @include flex-column;
     height: 573px;
     background: $orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     h3{
         font-size: 36px;
@@ -20,8 +17,7 @@
     }
 
     .bottom {
-        display: flex;
-        flex-direction: column;
+        @include flex;
         margin: 40px auto;
         width: 390px;
         background: $white;
@@ -52,22 +48,12 @@
                 margin: 10px 5px 10px 15px;
                 position: relative;  
             &:before {
-                position: absolute;
-                    top: 46%;
-                    left: 46%;
-                    content: "";
-                    width: 0%;
-                    height: 0%;
-                    background: $green;
-                    border-radius: 50%;
-                    transition: 0.3s;
+                @include button-before;
             }
 
             &:checked:before {
-                top: 25%;
-                left: 25%;
-                width: 50%;
-                height: 50%;
+                @include size;
+        
             }
             &:checked+label {
                 font-weight: 600;
@@ -95,8 +81,10 @@
                 color: black;
             }
             
-        }}}
-        @media (max-width:768px){
+        }
+    }
+}
+@media (max-width:768px){
         .eighth{
             height: 500px;
         
@@ -116,5 +104,5 @@
                 padding: 5px 0;
             }
         }
-        }
+}
         
