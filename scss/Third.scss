@@ -5,9 +5,7 @@
     max-width: 1600px;
 
     .content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-space;
         position: relative;
         color: $white;
         gap: 40px;
@@ -15,10 +13,7 @@
         margin-right: 90px;
         padding:50px;
     .buttons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex-column;
         gap:15px;
         cursor: pointer;
     

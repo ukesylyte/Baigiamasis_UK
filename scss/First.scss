@@ -7,8 +7,7 @@
     align-items: center;
     
 .about {
-    display: flex;
-    flex-direction: column;
+    @include flex;
     justify-content: right;
     gap: 20px;
     color:$white;
@@ -51,8 +50,7 @@ button {
 
 .details {
     width: 360px;
-    display: flex;
-    flex-direction: column;
+    @include flex;
     justify-content: center;
     z-index: 1;
     background: $white;
@@ -102,22 +100,11 @@ h4 {
             margin: 10px 5px 10px 15px;
             position: relative;  
         &:before {
-            position: absolute;
-                top: 46%;
-                left: 46%;
-                content: "";
-                width: 0%;
-                height: 0%;
-                background: $green;
-                border-radius: 50%;
-                transition: 0.3s;
+            @include button-before;
         }
 
         &:checked:before {
-            top: 25%;
-            left: 25%;
-            width: 50%;
-            height: 50%;
+            @include size;
         }
         &:checked+label {
             font-weight: 600;

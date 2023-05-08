@@ -1,7 +1,5 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-space;
   width: 1600px;
   margin: auto;
   position: fixed;

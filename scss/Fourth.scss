@@ -1,14 +1,11 @@
 #info{
     background: $black;
     color: white;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     align-items: center;
     height: 596px;
     .fourth {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-space;
     gap:180px;
     margin: 0px 170px;
     }
@@ -18,8 +15,7 @@
     }
 
     .right {
-        display: flex;
-        flex-direction: column;
+        @include flex;
         gap: 25px;
     h2 {
         font-size:30px;
@@ -39,8 +35,7 @@
         display: flex;
         
         .icon {
-            display: flex;
-            justify-content: center;
+            @include flex-center;
             align-items: center;
             background: $orange;
             width: 50px;

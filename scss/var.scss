@@ -5,3 +5,39 @@ $orange:#E27866;
 $blue: #6696E2; 
 $grey: #86878B;
 $border:#0000006b;
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin flex {
+    display: flex;
+    flex-direction: column;
+  }
+  @mixin size {
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  }
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+  }
+@mixin flex-space{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin button-before {
+  position: absolute;
+  top: 46%;
+   left: 46%;
+  content: "";
+  width: 0%;
+  height: 0%;
+  background: $green;
+  border-radius: 50%;
+  transition: 0.3s;
+    }
