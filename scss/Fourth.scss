@@ -25,9 +25,10 @@
         font-size:30px;
     }
     hr {
-        color: $orange;
+        background-color: $orange;
         height:2px;
         width:200px;
+        border:none;
     }
     p {
         font-size: 14px;
@@ -54,3 +55,34 @@
     }
 }
 }
+@media (max-width:768px){
+    #info{
+        height: 700px;
+        .fourth {
+        gap:50px;
+        margin: 0px 50px;
+        flex-direction: column;
+        }
+    
+        img {
+            width: 250px;
+        }
+    
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        h2 {
+            font-size:25px;
+            text-align: center;
+        }
+        hr {
+          
+            width:400px;
+        }
+        p {
+ 
+            width: 100%;
+        }
+    }
+    }}

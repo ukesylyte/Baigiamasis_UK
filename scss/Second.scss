@@ -1,11 +1,9 @@
 .second {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 105px;
     background: $white;
     max-width: 1600px;
-}
 
 .text {
     margin-left: 150px;
@@ -23,11 +21,53 @@
 }}
 .social {
     display: flex;
-    gap:150px;
+    justify-content: space-between;
+    align-items: center;
+    gap:100px;
+    margin-right:180px;
 
     img {
-    opacity: 65%;
+        display: inline-block;
+        width: auto;
+        height: 30px;
+    } 
+    a {
+    opacity: 1;
     transition: 0.3s;
     &:hover {
-    opacity: 1;
-}}}
+    opacity: 65%;
+
+    }
+    }
+}
+}
+@media (max-width:768px){
+    .second {
+       
+        justify-content: center;
+        flex-direction: column;
+        height: 130px;
+        max-width: 768px;
+        gap:15px;
+    
+    .text {
+        margin-left: 20px;
+       
+        h3{
+  
+        font-size:17px;
+        }
+        p{
+        width: 500px;
+    }}
+    .social {
+        gap:50px;
+        margin-left:20px;
+    
+        img {
+            height: 23px;
+        } 
+
+        }
+        }
+    }

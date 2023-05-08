@@ -83,12 +83,12 @@
             max-width: 159px;
             height: 48px;
             background: $green;
-            border: none;
             margin: 40px auto;
             padding: 0 55px;
             color: white;
             font-size: 15px;
             border-radius: 5px;
+            border:none;
 
             &:hover {
                 background: $orange;
@@ -96,3 +96,25 @@
             }
             
         }}}
+        @media (max-width:768px){
+        .eighth{
+            height: 500px;
+        
+            h3{
+                font-size: 28px;
+                color: $white;
+                padding: 30px 5px 20px 5px;
+            }
+        
+            p {
+                font-size: 15px;
+            }
+        
+            .bottom {
+                margin: 30px auto;
+                width: 300px;
+                padding: 5px 0;
+            }
+        }
+        }
+        

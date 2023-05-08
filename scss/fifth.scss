@@ -15,7 +15,8 @@
 }
 
 hr {
-    color: $orange;
+    background-color: $orange;
+    border:none;
     width: 64px;
     height: 2px;
 }
@@ -67,4 +68,40 @@ p {
     }
 }
 }
+}
+@media (max-width:768px){
+
+        // flex-direction: column;
+
+        .fifth {
+            height: 700px;
+            display: flex;
+            margin: 0px 100px;
+            gap: 15px;
+        
+            h2 {
+            font-size:26px;
+        
+        }
+        
+        hr {
+            background-color: $orange;
+            width: 64px;
+            height: 2px;
+            border: none;
+        }
+        p {
+            color: $grey;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-direction: column;
+        }
+    }
 }

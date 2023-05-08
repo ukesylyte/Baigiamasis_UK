@@ -35,3 +35,22 @@ footer {
 }
     }
 }
+@media (max-width:768px){
+footer {
+    height: 100%;
+    
+    .footer-main {
+        flex-direction: column;
+        justify-content:center;
+        padding: 10px 0px;
+        margin-left: 20px;
+        max-width: 768px;
+        p {
+            text-align: left;
+}
+.icons {
+    gap: 80px;
+}
+    }
+}
+}

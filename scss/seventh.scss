@@ -24,9 +24,10 @@
     }
 
     hr{
-      color: $blue;
+      background-color: $blue;
       height: 2px;
       width: 64px;
+      border:none;
     }
   }
   .swiper {
@@ -105,3 +106,44 @@
     }
   }
 }
+@media (max-width:768px){
+  .seventh {
+    .reviews {
+      gap: 30px;
+      padding: 20px 0;
+      margin-left: 20px;
+    
+    .label {
+      gap: 25px;
+    }
+      h2 {
+        font-size: 26px;
+        font-weight: 600;
+        color: $orange;
+      }
+  
+      hr{
+        background-color: $blue;
+        height: 4px;
+        width: 64px;
+        border:none;
+      }
+    }
+    .swiper {
+       .swiper-pagination-bullet {
+        border: 1px solid $blue;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $blue;
+      }
+      .swiper-wrapper {
+        align-items: center;
+      }
+      .card {
+        justify-content: center;
+        align-items: center
+
+            }
+          }
+        }
+      }
